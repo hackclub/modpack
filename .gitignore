@@ -1,0 +1,13 @@
+crash-reports/
+logs/
+saves/
+screenshots/
+llibrary/
+server-resource-packs/
+options.txt
+usercache.json
+usernamecache.json
+journeymap/
+mods/
+.ReAuth.cfg
+*.log

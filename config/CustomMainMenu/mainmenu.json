@@ -1,0 +1,221 @@
+{
+    "images":
+    {
+		"black_sp":
+        {
+            "image" : "mainmenu:textures/buttons/bg_hex2.png",
+            "posX" : 44,
+            "posY" : 18,
+            "width" : 56,
+            "height" : 68,
+            "alignment" : "top_left"
+        },
+		"black_mp":
+        {
+            "image" : "mainmenu:textures/buttons/bg_hex2.png",
+            "posX" : 102,
+            "posY" : 18,
+            "width" : 56,
+            "height" : 68,
+            "alignment" : "top_left"
+        },
+		"black_mod":
+        {
+            "image" : "mainmenu:textures/buttons/bg_hex2.png",
+            "posX" : 73,
+            "posY" : 71,
+            "width" : 56,
+            "height" : 68,
+            "alignment" : "top_left"
+        },
+		"black_sett":
+        {
+            "image" : "mainmenu:textures/buttons/bg_hex2.png",
+            "posX" : 15,
+            "posY" : 71,
+            "width" : 56,
+            "height" : 68,
+            "alignment" : "top_left"
+        }
+	
+	},
+    
+    "buttons":
+    {     
+	
+		"sp_button":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/single.png",
+            "posX" : 10,
+            "posY" : 17,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "left_top",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+		"multiplayer":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/multi.png",
+            "posX" : 68,
+            "posY" : 17,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "left_top",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+               
+		"options":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/settings.png",
+            "posX" : -243,
+            "posY" : -85,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+
+                    
+
+        "mods":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/mods.png",
+            "posX" : -185,
+            "posY" : -85,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },	        
+		"quit":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/quit.png",
+            "posX" : -69,
+            "posY" : -85,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },        
+		"language":
+        {
+            "text" : "",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 3125670,
+			"texture" : "mainmenu:textures/buttons/lang.png",
+            "posX" : -127,
+            "posY" : -85,
+            "width" : 64,
+            "height" : 64,
+			"imageWidth" : 128,
+			"imageHeight" : 128,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                
+                "type" : "openGui",
+                "gui"  : "languages"
+            }
+        },
+        "versionChecker":
+        {
+            "text" : "Version-Checker",
+            "posX" : 2,
+            "posY" : -35,
+            "width" : 100,
+            "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,			
+			"alignment" : "bottom_left",
+            "wrappedButton" : 404
+        }
+        // "refresh":
+        // {
+        //     "text" : "",
+        //     "posX" : -154,
+        //     "posY" : 132,
+        //     "width" : 20,
+        //     "height" : 20,
+        //     "texture" : "custommainmenu:textures/gui/buttons.png",
+        //     "action" : 
+        //     {
+        //         "type" : "refresh"
+        //     }
+        // }
+	},
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Forge #forgeversion# for MC #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+			"fontSize" : 1,
+            "alignment" : "bottom_left"
+        },
+        
+		"packTxt":
+        {
+            "text" : "AAIII - 0.0.1a",
+            "posX" : 2,
+            "posY" : 2,
+            "color" : -1,
+            "alignment" : "top_left"
+        }
+    },
+    
+    "other":
+    {
+		"background":
+		{
+			"image" : "mainmenu:textures/bg.png",
+			"mode" : "stretch"
+		}
+    }
+}

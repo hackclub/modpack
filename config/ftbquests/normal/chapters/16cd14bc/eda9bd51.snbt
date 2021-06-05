@@ -1,0 +1,22 @@
+{
+	title: "Basic mining",
+	x: -4.5d,
+	y: 1.0d,
+	dependencies: [
+		"54446144"
+	],
+	tasks: [{
+		uid: "c0e76196",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}]
+	},
+	{
+		uid: "a23f98c9",
+		type: "item",
+		items: [{
+			item: "minecraft:coal_ore"
+		}]
+	}]
+}
