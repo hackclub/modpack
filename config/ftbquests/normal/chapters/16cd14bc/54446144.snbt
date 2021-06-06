@@ -1,14 +1,16 @@
 {
+	title: "Welcome!",
 	x: -6.0d,
 	y: 1.0d,
 	text: [
-		"Welcome fellow hacker, and welcome to the Modded Server.  You seem to have discovered the quests system, which will reward you for completing quests. Click the check mark to move on to your other quests"
+		"Welcome fellow hacker, and welcome to the Modded Server.  You seem to have discovered the quests system, which will reward you for completing quests. Now mine a piece of dirt to complete this quest and to move on!"
 	],
 	tasks: [{
-		uid: "7ac3c16c",
-		type: "checkmark",
-		title: "Welcome!",
-		icon: "minecraft:dirt"
+		uid: "b1117458",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}]
 	}],
 	rewards: [{
 		uid: "2d440a9a",

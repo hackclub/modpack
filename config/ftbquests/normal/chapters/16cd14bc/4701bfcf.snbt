@@ -1,0 +1,53 @@
+{
+	title: "The Smeltery",
+	x: -1.5d,
+	y: 1.0d,
+	text: [
+		"The smeltery is used to smelt your ores, make alloys, and forge tool parts using casts. "
+	],
+	dependencies: [
+		"96fe65f1"
+	],
+	tasks: [{
+		uid: "9f1ae90d",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 1 3"
+		}],
+		count: 16L
+	},
+	{
+		uid: "d2a7c27f",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials"
+		}],
+		count: 16L
+	},
+	{
+		uid: "29b1850b",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "63eebbd1",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	},
+	{
+		uid: "e64ae276",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	}],
+	rewards: [{
+		uid: "8ce69665",
+		type: "ftbmoney:money",
+		ftb_money: 90L
+	}]
+}

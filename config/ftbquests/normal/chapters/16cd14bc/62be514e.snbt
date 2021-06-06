@@ -1,0 +1,42 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"Construct's Amory is a addon to Tinker's Construct that lets you customize your armor as well. Read the Armory Addendum to learn more!"
+	],
+	dependencies: [
+		"4701bfcf"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "ba0939df",
+		type: "item",
+		items: [{
+			id: "conarm:armorforge",
+			tag: {
+				textureBlock: {
+					id: "minecraft:iron_block",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}]
+	},
+	{
+		uid: "07296b0b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "conarm:book"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dafc35eb",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

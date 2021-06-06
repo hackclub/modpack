@@ -1,3 +1,6 @@
-§e# Add Your ChangeLog to §c'changelog.txt'§r in the config files
+§2Hacc Pacc 1.0 2021-05-05
 
-You can use Minecrafts §9Color §2Codes §6to§r §nmake your changlogs look Good.
+Customized main menu and added discordrpc
+
+Added changelog
+
