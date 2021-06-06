@@ -11,3 +11,4 @@ journeymap/
 mods/
 .ReAuth.cfg
 *.log
+backups/
