@@ -2,7 +2,6 @@ crash-reports/
 logs/
 saves/
 screenshots/
-llibrary/
 server-resource-packs/
 options.txt
 usercache.json
@@ -13,3 +12,6 @@ mods/
 *.log
 backups/
 astralsorcery/gatewayScreenshots/
+eula.txt
+world/
+
