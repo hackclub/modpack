@@ -13,4 +13,4 @@ mods/
 *.log
 backups/
 astralsorcery/gatewayScreenshots/
-
+local/*
