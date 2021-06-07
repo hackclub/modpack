@@ -13,4 +13,5 @@ mods/
 *.log
 backups/
 astralsorcery/gatewayScreenshots/
-
+local/
+.mixin.out
