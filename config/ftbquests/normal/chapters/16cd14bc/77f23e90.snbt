@@ -1,0 +1,43 @@
+{
+	title: "Its Nether Time",
+	x: -1.0d,
+	y: -0.5d,
+	dependencies: [
+		"a1606d7b"
+	],
+	tasks: [{
+		uid: "2309b22c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:diamond_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6da385c",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "9949898e",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:flint_and_steel"
+		}
+	},
+	{
+		uid: "2ebfae5b",
+		type: "ftbmoney:money",
+		ftb_money: 75L
+	}]
+}

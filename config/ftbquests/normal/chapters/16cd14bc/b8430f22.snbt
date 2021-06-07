@@ -1,0 +1,17 @@
+{
+	x: -6.0d,
+	y: 2.5d,
+	text: [
+		"If you lose your money, \"/pay yourself 1\" as this will reload your money. Yes this is a bug. "
+	],
+	tasks: [{
+		uid: "3ed963bf",
+		type: "checkmark",
+		title: "Important Info"
+	}],
+	rewards: [{
+		uid: "68b4607c",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

@@ -1,0 +1,40 @@
+{
+	title: "I love mining!",
+	x: -2.5d,
+	y: -0.5d,
+	dependencies: [
+		"eda9bd51",
+		"8bf28fb7"
+	],
+	tasks: [{
+		uid: "5e573874",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	},
+	{
+		uid: "ba772162",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ore"
+		}]
+	},
+	{
+		uid: "ba658dd2",
+		type: "item",
+		items: [{
+			item: "minecraft:dye 1 4"
+		}]
+	},
+	{
+		uid: "b81e8fdb",
+		type: "fluid",
+		fluid: "lava"
+	}],
+	rewards: [{
+		uid: "4cb03888",
+		type: "ftbmoney:money",
+		ftb_money: 75L
+	}]
+}

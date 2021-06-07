@@ -1,0 +1,7 @@
+{
+	title: "Early Game",
+	icon: "minecraft:dirt",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}
