@@ -1,7 +1,0 @@
-{
-	title: "Mid Game",
-	icon: "thermalfoundation:storage 1 6",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}
