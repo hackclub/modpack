@@ -1,7 +1,0 @@
-{
-	title: "Sell stuff",
-	icon: "thermalfoundation:coin 1 70",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

@@ -1,6 +1,0 @@
-§2Hacc Pacc 1.0 2021-05-05
-
-Customized main menu and added discordrpc
-
-Added changelog
-
