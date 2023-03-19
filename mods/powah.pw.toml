@@ -1,0 +1,13 @@
+name = "Powah!"
+filename = "Powah-3.0.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KZO4S4DO/versions/ETImAAwl/Powah-3.0.7.jar"
+hash-format = "sha1"
+hash = "bda75dc694b490dc055a9d4d041bc9f1d2ba4ab3"
+
+[update]
+[update.modrinth]
+mod-id = "KZO4S4DO"
+version = "ETImAAwl"
