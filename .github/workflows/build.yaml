@@ -15,7 +15,7 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Replace version number
-        run: sed -i "s/version = \"dev\"/version = \"$(git describe --always --dirty)\"/g" pack.toml
+        run: sed -i "s/version = \"dev\"/version = \"$(git describe --always)\"/g" pack.toml
 
       - name: refresh modpack
         run: packwiz refresh --build
@@ -28,6 +28,14 @@ jobs:
             pack.toml
             index.toml
             mods/
+
+      - name: Cache Mods
+        id: cache-mods
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/packwiz/cache
+          key: ${{ runner.os }}-packwiz-${{ hashFiles('index.toml') }}
+          restore-keys: ${{ runner.os }}-packwiz
 
       - name: build modrinth format modpack
         run: packwiz modrinth export -o hackclub-modded.mrpack
