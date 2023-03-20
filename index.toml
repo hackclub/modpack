@@ -211,6 +211,11 @@ hash = "15ab30e8e115cad509dd22858572bb588340bfa8cd4f4c2660771e33c7e9bbca"
 metafile = true
 
 [[files]]
+file = "mods/mantle.pw.toml"
+hash = "e2039e4afea28384f22b27d46faecd778e13b88619b282df83ebfc0e83547d90"
+metafile = true
+
+[[files]]
 file = "mods/mcjtylib.pw.toml"
 hash = "d90b48ea447681cc04482810a0a77c1f2f4b21831abd2bebac81a0628c908e0c"
 metafile = true
@@ -246,6 +251,11 @@ hash = "30a05f4f66e204844b615d3bcd5e9996ce0d8ef6ae24ced426077471f9cdff0a"
 metafile = true
 
 [[files]]
+file = "mods/projecte.pw.toml"
+hash = "824ad9a385cce61265f09bbc1eb1666756a8ba84a3870e4bed9a92b5ce7a70f8"
+metafile = true
+
+[[files]]
 file = "mods/quark.pw.toml"
 hash = "4d04ec67f5041f013f8794b693c20a00ce79d23cbca877b56803e5a73951414c"
 metafile = true
@@ -263,6 +273,11 @@ metafile = true
 [[files]]
 file = "mods/spark.pw.toml"
 hash = "c6397c3fafeed44c67b0ea31e5cbdabc4001e4fee78013c7f3e0cfe88c25a42d"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
+hash = "b1ba29bdea11cb2e7821b7846cbfd2b38bbae275c1869ed6d88adb694a2c64ed"
 metafile = true
 
 [[files]]
