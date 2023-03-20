@@ -20,11 +20,19 @@ jobs:
       - name: refresh modpack
         run: packwiz refresh --build
 
+      - name: collect packwiz ignore
+        id: pw_ignore
+        run: echo "PACKWIZ_IGNORE=$(cat .packwizignore)" >> $GITHUB_OUTPUT
+
       - name: upload artifact (packwiz)
         uses: actions/upload-artifact@v3
         with:
           name: "modpack (packwiz format)"
-          path: "./"
+          path: | 
+            pack.toml
+            index.toml
+            mods/
+            ${{ steps.pw_ignore.outputs.PACKWIZ_IGNORE }}
 
       - name: build modrinth format modpack
         run: packwiz modrinth export -o hackclub-modded.mrpack
