@@ -161,10 +161,6 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/justhammers.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/lazierae2.pw.toml"
 metafile = true
 
