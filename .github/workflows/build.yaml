@@ -66,6 +66,7 @@ jobs:
           name: "modrinth-modpack"
           path: "hackclub-modded.mrpack"
   release:
+    needs: build-artifacts
     if: ${{ github.ref_type == 'tag' }}
     name: Release to modrinth and github
     runs-on: ubuntu-22.04
