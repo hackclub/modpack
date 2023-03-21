@@ -44,10 +44,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "packwiz-modpack"
-          path: | # TODO: parse .packwiz ignore? add all other files?
+          path: |
             pack.toml
             index.toml
             mods/
+            README.md
 
       - name: Cache Mods
         id: cache-mods
