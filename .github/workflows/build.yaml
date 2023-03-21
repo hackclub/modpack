@@ -24,15 +24,20 @@ jobs:
       - name: get go cache env
         id: go-cache-env
         run: |
-          echo "GOMODCACHE=$(go env GOMODCACHE)" >> $GITHUB_OUTPUT
-          echo "GOCACHE=$(go env go env GOCACHE)" >> $GITHUB_OUTPUT
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "GOMODCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOMODCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+          echo "GOCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
 
       - name: cache go
         uses: actions/cache@v3
         with:
           path: |
-            ${{steps.go-cache-env.outputs.GOMODCACHE}}
-            ${{steps.go-cache-env.outputs.GOCACHE}}
+            ${{env.GOMODCACHE}}
+            ${{env.GOCACHE}}
           key: ${{ runner.os }}-gomod
 
       - name: install packwiz
