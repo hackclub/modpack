@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Fetch Repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # checkout non-detached, so git describe works
       - name: get go for packwiz
         uses: actions/setup-go@v4
         with:
