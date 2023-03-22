@@ -155,6 +155,8 @@ jobs:
           echo "- [Modrinth](https://modrinth.com/modpacks/${{secrets.MODRINTH_PROJECT}}/versions)" >> $GITHUB_STEP_SUMMARY
   deploy:
     runs-on: ubuntu-22.04
+    needs: build-artifacts
+    if: false # tmp
     steps:
       - name: Fetch Packwiz Modpack
         uses: actions/download-artifact@v3
