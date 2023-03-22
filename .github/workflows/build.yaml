@@ -44,25 +44,34 @@ jobs:
       - name: install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: get version number
+      - name: get base version number
         id: find_version
         run: echo "NEW_VERSION=$(git describe --always --tags)" >> $GITHUB_OUTPUT
 
-      - run: |
-          echo "# Version" >> $GITHUB_STEP_SUMMARY
-          echo "${{steps.find_version.outputs.NEW_VERSION}}" >> $GITHUB_STEP_SUMMARY
-
-      - name: Set new version number (default branch or tagged build)
+      - name: Set new version number (default branch / tagged build)
         if: ((github.ref == format('refs/heads/{0}', github.event.repository.default_branch)) || (startsWith(github.ref, 'refs/tags/')))
-        run: sed -i "s~version = \"dev\"~version = \"${{steps.find_version.outputs.NEW_VERSION}}\"~g" pack.toml
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
 
       - name: Set new version number (PR)
         if: ((github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) && (github.event_name == 'pull_request'))
-        run: sed -i "s~version = \"dev\"~version = \"${{steps.find_version.outputs.NEW_VERSION}}+PR${{ github.ref_name }}\"~g" pack.toml
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}+PR$(echo "${{ github.ref_name }}" | sed "s~/merge~~g")"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
 
       - name: Set new version number (Other branch)
         if: ((github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) && (github.event_name != 'pull_request') && !(startsWith(github.ref, 'refs/tags/')))
-        run: sed -i "s~version = \"dev\"~version = \"${{steps.find_version.outputs.NEW_VERSION}}+${{ github.ref_name }}\"~g" pack.toml
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}+${{ github.ref_name }}"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
+
+      - run: |
+          echo "# Version" >> $GITHUB_STEP_SUMMARY
+          echo "${{env.SET_VERSION}}" >> $GITHUB_STEP_SUMMARY
 
       - name: generate hashes
         run: packwiz refresh --build
@@ -144,3 +153,17 @@ jobs:
       - if: steps.modrinth-release.conclusion == 'success'
         run: |
           echo "- [Modrinth](https://modrinth.com/modpacks/${{secrets.MODRINTH_PROJECT}}/versions)" >> $GITHUB_STEP_SUMMARY
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Fetch Packwiz Modpack
+        uses: actions/download-artifact@v3
+        with:
+          name: packwiz-modpack
+          path: pw-modpack
+
+      - name: Deploy production
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: pw-modpack
+          target-folder: v3
