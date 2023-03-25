@@ -29,6 +29,10 @@ file = "mods/autoreglib.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/badpackets.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 metafile = true
 
@@ -45,6 +49,10 @@ file = "mods/building-gadgets.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/carry-on.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 metafile = true
 
@@ -57,6 +65,10 @@ file = "mods/codechicken-lib-1-8.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/cofh-core.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/common-capabilities.pw.toml"
 metafile = true
 
@@ -66,6 +78,10 @@ metafile = true
 
 [[files]]
 file = "mods/cosmetic-armor-reworked.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-jetpack.pw.toml"
 metafile = true
 
 [[files]]
@@ -161,7 +177,19 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/jei.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/lazierae2.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mantle.pw.toml"
 metafile = true
 
 [[files]]
@@ -209,7 +237,23 @@ file = "mods/spark.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/thermal-expansion.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/thermal-foundation.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/titanium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/wthit.pw.toml"
 metafile = true
 
 [[files]]
