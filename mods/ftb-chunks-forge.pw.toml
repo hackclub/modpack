@@ -1,13 +1,13 @@
 name = "FTB Chunks (Forge)"
-filename = "ftb-chunks-forge-1802.3.16-build.247.jar"
+filename = "ftb-chunks-forge-1802.3.17-build.265.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "495de70197df2a76058d7f4f008ddce816de408d"
+hash = "3b55d6a394a1b60358adc3a80763a544d15f0ba5"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4443728
+file-id = 4494633
 project-id = 314906

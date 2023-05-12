@@ -7,7 +7,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "ac6c2997986a51fd97dee6950963aa186a7240d397f70b93760d65e641f1481b"
+hash = "6f1416e94a30e075210ebc3dfbb24ea4a62d8a1b529b1ae39a9f3de75db4b62a"
 metafile = true
 
 [[files]]
@@ -17,7 +17,7 @@ metafile = true
 
 [[files]]
 file = "mods/applied-energistics-2.pw.toml"
-hash = "3cacdb43b158d024f33eda4364c70c8fe15f02ad93011ef44b2e894f9b709ce3"
+hash = "0209a7f8182374ef91ea4615bfb3599a50d7830e76e95dee98b806a267df2781"
 metafile = true
 
 [[files]]
@@ -27,7 +27,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "a50a33ef816833d7540461b89161751bccf1fdbdc9ab0bbf9d07942621a26267"
+hash = "6d3d349f02c4ffd6a8252db88e6168f9037601660a73fd282c4203a199e9997e"
 metafile = true
 
 [[files]]
@@ -86,13 +86,28 @@ hash = "1d4cbe411ab2aa943d6f9ab878416b53ff9a683d395fb413f841579c5b470f39"
 metafile = true
 
 [[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "4bdc2b976cc76b8a5b82dcc7f260903acfb4fab270efa570e93ac2fa24a62414"
+metafile = true
+
+[[files]]
+file = "mods/create-goggles.pw.toml"
+hash = "96dd93de66d2de35b197091799fd57ef7ba1189192295bd96e087995eda94551"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+hash = "2c12522dfd2280afe8570e008bbd569b846c62379221026087f57cf40cc4f49f"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "3d22456ed14c5f4abaf5a1b3dfcfaff3626f595f353176eec276f70dffdef6fd"
 metafile = true
 
 [[files]]
 file = "mods/createaddition.pw.toml"
-hash = "07812fba8335ba94648fe700014b78cfb3e070ddb0508581cb3f5031baa04619"
+hash = "3bad491224e4a972591b3898b419e7d8995ab1816f1fc7962793d36445d3ae7e"
 metafile = true
 
 [[files]]
@@ -102,7 +117,7 @@ metafile = true
 
 [[files]]
 file = "mods/cyclops-core.pw.toml"
-hash = "56bf84ffa3c873e455c580c13d9ee0d6b7a3c562c4dc82a07d83cca632dd03ab"
+hash = "ca8e996d05b7931efd87a193ed7579e8ff3f2152d7f3f2b884c6fba943f8b0f4"
 metafile = true
 
 [[files]]
@@ -132,12 +147,12 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-chunks-forge.pw.toml"
-hash = "fbb72b9320257e8cb9381d647f5cecd1f751a041e86408356d81b77aac47ce80"
+hash = "29b2ade4ba6df522f465f19876a1a16fea668970160a02c66b6a6a272ac9519f"
 metafile = true
 
 [[files]]
 file = "mods/ftb-essentials-forge.pw.toml"
-hash = "3546d7047d24d2358cfaf52b0d02008076cd22e4467d1f8faab96cde72492c58"
+hash = "b49c26a15abf81d01b5fb7e72ad115c939c38caeafed80f055dba1653d8e6484"
 metafile = true
 
 [[files]]
@@ -242,7 +257,7 @@ metafile = true
 
 [[files]]
 file = "mods/powah.pw.toml"
-hash = "30a05f4f66e204844b615d3bcd5e9996ce0d8ef6ae24ced426077471f9cdff0a"
+hash = "a38c05b0049bc0fe98ced48a657678b27f1d006d1496212c51cc889cb05a30e0"
 metafile = true
 
 [[files]]
@@ -262,12 +277,17 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
-hash = "c6397c3fafeed44c67b0ea31e5cbdabc4001e4fee78013c7f3e0cfe88c25a42d"
+hash = "7d55d3ce406bae0b380718c5b68167c9cc4eb454c1e78c7b754d6c50d04e2b04"
+metafile = true
+
+[[files]]
+file = "mods/starlight-forge.pw.toml"
+hash = "529c82bb9c085fb98ee4e428eec8de8cd6d9563295ce80c7afc6c4c53bd7de8b"
 metafile = true
 
 [[files]]
 file = "mods/titanium.pw.toml"
-hash = "61f884e89092a648306513b93b33191641775aad6ac188c90000acea7c480b5d"
+hash = "4e6c0604ce9ffd2c090612430005f0db9ee3e8c0d47830bfa912783ffb641ae6"
 metafile = true
 
 [[files]]
