@@ -33,6 +33,10 @@ file = "mods/ars-nouveau.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/autoreglib.pw.toml"
 metafile = true
 
@@ -137,6 +141,10 @@ file = "mods/entityculling.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/expandability.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/experience-obelisk.pw.toml"
 metafile = true
 
@@ -162,10 +170,6 @@ metafile = true
 
 [[files]]
 file = "mods/flywheel.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/ftb-teams-forge.pw.toml"
 metafile = true
 
 [[files]]
@@ -253,6 +257,14 @@ file = "mods/mining-gadgets.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ore-excavation.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/patchouli.pw.toml"
 metafile = true
 
@@ -326,6 +338,14 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xnet-gases.pw.toml"
 metafile = true
 
 [[files]]
