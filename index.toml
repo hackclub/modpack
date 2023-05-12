@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/advanced-peripherals.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ae2-things-forge.pw.toml"
 metafile = true
 
@@ -25,6 +29,10 @@ file = "mods/architectury-api.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/ars-nouveau.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/autoreglib.pw.toml"
 metafile = true
 
@@ -33,7 +41,7 @@ file = "mods/balm.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/better-fps-render-distance.pw.toml"
+file = "mods/blood-magic.pw.toml"
 metafile = true
 
 [[files]]
@@ -49,11 +57,23 @@ file = "mods/cc-tweaked.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/chance-cubes.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/codechicken-lib-1-8.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cofh-core.pw.toml"
 metafile = true
 
 [[files]]
@@ -69,18 +89,19 @@ file = "mods/cosmetic-armor-reworked.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/crafting-tweaks.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
-hash = "4bdc2b976cc76b8a5b82dcc7f260903acfb4fab270efa570e93ac2fa24a62414"
 metafile = true
 
 [[files]]
 file = "mods/create-goggles.pw.toml"
-hash = "96dd93de66d2de35b197091799fd57ef7ba1189192295bd96e087995eda94551"
 metafile = true
 
 [[files]]
 file = "mods/create-steam-n-rails.pw.toml"
-hash = "2c12522dfd2280afe8570e008bbd569b846c62379221026087f57cf40cc4f49f"
 metafile = true
 
 [[files]]
@@ -92,11 +113,19 @@ file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/ctm.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/cyclops-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/dark-mode-everywhere.pw.toml"
 metafile = true
 
 [[files]]
@@ -108,7 +137,23 @@ file = "mods/entityculling.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/experience-obelisk.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/extreme-sound-muffler.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/findme.pw.toml"
 metafile = true
 
 [[files]]
@@ -120,31 +165,19 @@ file = "mods/flywheel.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/ftb-chunks-forge.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/ftb-essentials-forge.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/ftb-library-forge.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/ftb-ranks-forge.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/ftb-ultimine-forge.pw.toml"
+file = "mods/functional-storage.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/functional-storage.pw.toml"
+file = "mods/gag.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
 metafile = true
 
 [[files]]
@@ -168,6 +201,14 @@ file = "mods/inventory-essentials.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/inventory-sorter.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/iron-chests.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons.pw.toml"
 metafile = true
 
@@ -177,6 +218,10 @@ metafile = true
 
 [[files]]
 file = "mods/lazierae2.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mantle.pw.toml"
 metafile = true
 
 [[files]]
@@ -200,6 +245,14 @@ file = "mods/mekanism.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/merequester.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mining-gadgets.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/patchouli.pw.toml"
 metafile = true
 
@@ -216,6 +269,18 @@ file = "mods/rftools-base.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/rftools-builder.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-utility.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/simply-backpacks.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/smooth-boot-reloaded.pw.toml"
 metafile = true
 
@@ -224,7 +289,43 @@ file = "mods/spark.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/starlight-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/thermal-expansion.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/thermal-foundation.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/thermal-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/titanium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/torchmaster.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/trash-cans.pw.toml"
 metafile = true
 
 [[files]]
