@@ -32,7 +32,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "6d3d349f02c4ffd6a8252db88e6168f9037601660a73fd282c4203a199e9997e"
+hash = "4864451af376b26104b421900f69a0bea7c462edc2e47e359a341dbc457f3508"
 metafile = true
 
 [[files]]
@@ -97,7 +97,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "a57e921f872596ca19e411d726b7f6db272267f2dd712322a3168ce0f404fd44"
+hash = "f2d594d255ceeadc94b32be5200741b8a5f237fc65848da04e131f2b8970e6fd"
 metafile = true
 
 [[files]]
