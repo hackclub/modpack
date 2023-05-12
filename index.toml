@@ -45,7 +45,15 @@ file = "mods/balm.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/biomesyougo.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/blood-magic.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/bookshelf.pw.toml"
 metafile = true
 
 [[files]]
@@ -133,6 +141,18 @@ file = "mods/dark-mode-everywhere.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/dark-utilities.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/dungeon-crawl.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-plus.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ender-storage-1-8.pw.toml"
 metafile = true
 
@@ -177,10 +197,6 @@ file = "mods/functional-storage.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/gag.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/geckolib.pw.toml"
 metafile = true
 
@@ -221,6 +237,14 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/journeymap-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/lazierae2.pw.toml"
 metafile = true
 
@@ -249,11 +273,11 @@ file = "mods/mekanism.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/merequester.pw.toml"
+file = "mods/mining-gadgets.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/mining-gadgets.pw.toml"
+file = "mods/modular-routers.pw.toml"
 metafile = true
 
 [[files]]
@@ -265,7 +289,15 @@ file = "mods/ore-excavation.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/overloaded-armor-bar.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/patchouli.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/pig-pen-cipher.pw.toml"
 metafile = true
 
 [[files]]
@@ -277,15 +309,15 @@ file = "mods/quark.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/rftools-base.pw.toml"
+file = "mods/roughly-enough-items-hacks.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/rftools-builder.pw.toml"
+file = "mods/roughly-enough-items.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/rftools-utility.pw.toml"
+file = "mods/runelic.pw.toml"
 metafile = true
 
 [[files]]
@@ -305,11 +337,19 @@ file = "mods/starlight-forge.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/structure-gel-api.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
 metafile = true
 
 [[files]]
@@ -322,6 +362,10 @@ metafile = true
 
 [[files]]
 file = "mods/thermal-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/time-in-a-bottle-standalone.pw.toml"
 metafile = true
 
 [[files]]
@@ -342,12 +386,4 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/xnet-gases.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/xnet.pw.toml"
 metafile = true
