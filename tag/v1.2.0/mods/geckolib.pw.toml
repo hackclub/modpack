@@ -1,0 +1,13 @@
+name = "Geckolib"
+filename = "geckolib-forge-1.18-3.0.57.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8BmcQJ2H/versions/wwh0ZFLu/geckolib-forge-1.18-3.0.57.jar"
+hash-format = "sha1"
+hash = "014bfa85af8d7f75e239abc204bb763c9e4d21e2"
+
+[update]
+[update.modrinth]
+mod-id = "8BmcQJ2H"
+version = "wwh0ZFLu"
