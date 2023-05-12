@@ -3,11 +3,11 @@ filename = "waystones-forge-1.18.2-10.2.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/LOpKHB2A/versions/VQwfrkis/waystones-forge-1.18.2-10.2.1.jar"
 hash-format = "sha1"
-hash = "05500866189bc9b66b54859302adc4936fc74359"
-mode = "metadata:curseforge"
+hash = "65f145f36122b6ad718e6b55105a7533f8ef0108"
 
 [update]
-[update.curseforge]
-file-id = 4513844
-project-id = 245755
+[update.modrinth]
+mod-id = "LOpKHB2A"
+version = "VQwfrkis"

@@ -1,13 +1,13 @@
 name = "Create Crafts & Additions"
-filename = "createaddition-1.18.2-20230507a.jar"
+filename = "createaddition-1.18.2-20230426a.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/kU1G12Nn/versions/zl63eNaF/createaddition-1.18.2-20230426a.jar"
 hash-format = "sha1"
-hash = "e96717880554633727164c918fec1df6bfa2174a"
-mode = "metadata:curseforge"
+hash = "d2956b6fd96fcb75a4f17a2e5d789b9d804c4e04"
 
 [update]
-[update.curseforge]
-file-id = 4526962
-project-id = 439890
+[update.modrinth]
+mod-id = "kU1G12Nn"
+version = "zl63eNaF"

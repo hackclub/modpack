@@ -3,11 +3,11 @@ filename = "MekanismTools-1.18.2-10.2.5.465.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/tqQpq1lt/versions/10.2.5.465/MekanismTools-1.18.2-10.2.5.465.jar"
 hash-format = "sha1"
 hash = "0cad2bb8b70a56a331844b11a9bb1c8e2cf493a6"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 3875979
-project-id = 268567
+[update.modrinth]
+mod-id = "tqQpq1lt"
+version = "HmQmNiiC"

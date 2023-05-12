@@ -3,11 +3,11 @@ filename = "thermal_expansion-1.18.2-9.2.0.20.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/hmD6rrUJ/versions/wqYxoFpJ/thermal_expansion-1.18.2-9.2.0.20.jar"
 hash-format = "sha1"
 hash = "ee08840c9b8b2b39570bc4b718e8646bbd82f5ec"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 4382343
-project-id = 69163
+[update.modrinth]
+mod-id = "hmD6rrUJ"
+version = "wqYxoFpJ"
