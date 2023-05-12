@@ -7,6 +7,12 @@ on:
       - v*.*.*
       - v*.*.*-rc.*
   pull_request:
+permissions:
+  contents: write
+
+env:
+  target-name: hackpack
+
 jobs:
   build-artifacts:
     name: Build modpack
@@ -44,6 +50,9 @@ jobs:
       - name: install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
+      - name: install dasel
+        run: go install github.com/tomwright/dasel/v2/cmd/dasel@v2.2.0
+
       - name: get base version number
         id: find_version
         run: echo "NEW_VERSION=$(git describe --always --tags)" >> $GITHUB_OUTPUT
@@ -76,6 +85,15 @@ jobs:
       - name: generate hashes
         run: packwiz refresh --build
 
+      - name: get list of file to upload
+        id: fileindex
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "FILES<<$EOF" >> $GITHUB_OUTPUT
+          dasel -f index.toml -r toml -s "files.all().file" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
+
+
       - name: upload artifact (packwiz)
         uses: actions/upload-artifact@v3
         with:
@@ -83,8 +101,8 @@ jobs:
           path: |
             pack.toml
             index.toml
-            mods/
             README.md
+            ${{ steps.fileindex.outputs.FILES }}
 
       - name: Cache Mods
         id: cache-mods
@@ -95,13 +113,13 @@ jobs:
           restore-keys: ${{ runner.os }}-packwiz
 
       - name: build modrinth format modpack
-        run: packwiz modrinth export -o hackclub-modded.mrpack
+        run: packwiz modrinth export -o ${{ env.target-name }}.mrpack
 
       - name: upload artifact (modrinth)
         uses: actions/upload-artifact@v3
         with:
           name: "modrinth-modpack"
-          path: "hackclub-modded.mrpack"
+          path: "${{ env.target-name }}.mrpack"
   release:
     needs: build-artifacts
     if: ${{ github.ref_type == 'tag' }}
@@ -112,13 +130,14 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: modrinth-modpack
+
       - name: Fetch Packwiz Modpack
         uses: actions/download-artifact@v3
         with:
           name: packwiz-modpack
           path: pw-modpack
-      - name: Create hackclubmodpack.zip
-        run: zip -rq hackclub-modded-packwiz pw-modpack/  # hackclub-modded-packwiz.zip
+      - name: Create ${{ env.target-name }}.packwiz.zip
+        run: zip -rq ${{ env.target-name }}.packwiz pw-modpack/  #  ${{ env.target-name }}.packwiz.zip
 
       - name: Create Modrinth Release
         id: modrinth-release
@@ -129,8 +148,8 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-featured: ${{ !(contains(github.ref, '-rc.')) }}
           modrinth-unfeature-mode: ${{ ((contains(github.ref, '-rc.')) && 'none') || 'any' }} # "any" if production deploy, none otherwise
-          files-primary: "hackclub-modded.mrpack"
-          files-extra: "hackclub-modded-packwiz.zip"
+          files-primary: "${{ env.target-name }}.mrpack"
+          files-extra: "${{ env.target-name }}.packwiz.zip"
           version-type: ${{ ((contains(github.ref, '-rc.')) && 'beta') || 'release' }}
           game-versions: 1.18.2
 
@@ -141,8 +160,8 @@ jobs:
           generate_release_notes: ${{ !(contains(github.ref, '-rc.')) }}
           prerelease: ${{ contains(github.ref, '-rc.') }}
           files: |
-            hackclub-modded.mrpack
-            hackclub-modded-packwiz.zip
+            ${{ env.target-name }}.mrpack
+            ${{ env.target-name }}.packwiz.zip
       - if: ((steps.github-release.conclusion == 'success') || (steps.modrinth-release.conclusion == 'success'))
         run: echo "# Releases" >> $GITHUB_STEP_SUMMARY
 
@@ -154,18 +173,81 @@ jobs:
         run: |
           echo "- [Modrinth](https://modrinth.com/modpacks/${{secrets.MODRINTH_PROJECT}}/versions)" >> $GITHUB_STEP_SUMMARY
   deploy:
+    name: Deploy packwiz GH Pages
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-22.04
     needs: build-artifacts
-    if: false # tmp
+    if: ${{ github.event_name != 'pull_request' }}
+    env:
+      ghpagebot-name: github-actions[bot]
+      ghpagebot-email: 41898282+github-actions[bot]@users.noreply.github.com
+
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
       - name: Fetch Packwiz Modpack
         uses: actions/download-artifact@v3
         with:
           name: packwiz-modpack
           path: pw-modpack
 
+      # if pr, skip.
+      # if branch -> push to branch/branchname
+      # if tag -> push to tag/tagname
+      # if tag -> push to latest
+      # if tag && not rc -> push to stable
+
+
       - name: Deploy production
         uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ github.ref_type == 'branch' }}
         with:
           folder: pw-modpack
-          target-folder: v3
+          branch: gh-pages
+          target-folder: branch/${{ github.ref_name }}
+          git-config-name: ${{ env.ghpagebot-name }}
+          git-config-email: ${{ env.ghpagebot-email }}
+
+      - name: Deploy production
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ github.ref_type == 'tag' }}
+        with:
+          folder: pw-modpack
+          branch: gh-pages
+          target-folder: tag/${{ github.ref_name }}
+          git-config-name: ${{ env.ghpagebot-name }}
+          git-config-email: ${{ env.ghpagebot-email }}
+
+      - name: Deploy production
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ github.ref_type == 'tag' }}
+        with:
+          folder: pw-modpack
+          branch: gh-pages
+          target-folder: rc
+          git-config-name: ${{ env.ghpagebot-name }}
+          git-config-email: ${{ env.ghpagebot-email }}
+
+      - name: Deploy production
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ github.ref_type == 'tag' && !(contains(github.ref, '-rc.')) }}
+        with:
+          folder: pw-modpack
+          branch: gh-pages
+          target-folder: stable
+          git-config-name: ${{ env.ghpagebot-name }}
+          git-config-email: ${{ env.ghpagebot-email }}
+
+# TODO
+# Generate Changelog
+# maybe generate a json file in the repo, and a workflow modifies readme.md from the template (so it should never be modified manually)
+
+# packwiz list | sort
+# wc -l -> number of mods
+# readme.md -> list of mods in current branch?
+# releases -> full list of mods behind <details><summary>
+# full release -> diff of mods from last full release
+# RC release -> diff of mods from last rc / full release
+# publish readme, licence inside modpack + repo
+# generated changelog file to be included
