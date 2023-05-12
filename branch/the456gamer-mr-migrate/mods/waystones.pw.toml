@@ -1,0 +1,13 @@
+name = "Waystones"
+filename = "waystones-forge-1.18.2-10.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LOpKHB2A/versions/VQwfrkis/waystones-forge-1.18.2-10.2.1.jar"
+hash-format = "sha1"
+hash = "65f145f36122b6ad718e6b55105a7533f8ef0108"
+
+[update]
+[update.modrinth]
+mod-id = "LOpKHB2A"
+version = "VQwfrkis"

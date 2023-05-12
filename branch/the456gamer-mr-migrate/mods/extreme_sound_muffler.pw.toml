@@ -1,0 +1,13 @@
+name = "Extreme sound muffler"
+filename = "extremesoundmuffler-3.30_forge-1.18.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5IIKsxiL/versions/D2Pb8vRB/extremesoundmuffler-3.30_forge-1.18.2.jar"
+hash-format = "sha1"
+hash = "89d208986e891550e2bade5eab3b8bd628e100f0"
+
+[update]
+[update.modrinth]
+mod-id = "5IIKsxiL"
+version = "D2Pb8vRB"

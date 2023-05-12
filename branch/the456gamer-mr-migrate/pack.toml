@@ -1,0 +1,16 @@
+name = "Hack Pack"
+author = "Hack Club Minecraft Admins"
+version = "v1.2.0-1-gc5c741c+the456gamer-mr-migrate"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "2307f0b4de7f10a3002aa31b6b72fbd18f76d5d2b1d6879d5134db5b1bf9f960"
+
+[versions]
+forge = "40.2.0"
+minecraft = "1.18.2"
+
+[options]
+no-internal-hashes = true
