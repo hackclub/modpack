@@ -1,33 +1,90 @@
 name: build
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - v*.*.*
+      - v*.*.*-rc.*
+  pull_request:
 jobs:
-  build:
+  build-artifacts:
     name: Build modpack
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-go@v4
+      - name: Fetch Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # checkout non-detached, so git describe works
+      - name: get go for packwiz
+        uses: actions/setup-go@v4
         with:
           go-version: "1.20"
+          cache: false # only caches go projects, not general go pkgs
 
-      - name: Install Packwiz
+      - name: get go cache env
+        id: go-cache-env
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "GOMODCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOMODCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+          echo "GOCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+
+      - name: cache go
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{env.GOMODCACHE}}
+            ${{env.GOCACHE}}
+          key: ${{ runner.os }}-gomod
+
+      - name: install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: Replace version number
-        run: sed -i "s/version = \"dev\"/version = \"$(git describe --always)\"/g" pack.toml
+      - name: get base version number
+        id: find_version
+        run: echo "NEW_VERSION=$(git describe --always --tags)" >> $GITHUB_OUTPUT
 
-      - name: refresh modpack
+      - name: Set new version number (default branch / tagged build)
+        if: ((github.ref == format('refs/heads/{0}', github.event.repository.default_branch)) || (startsWith(github.ref, 'refs/tags/')))
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
+
+      - name: Set new version number (PR)
+        if: ((github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) && (github.event_name == 'pull_request'))
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}+PR$(echo "${{ github.ref_name }}" | sed "s~/merge~~g")"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
+
+      - name: Set new version number (Other branch)
+        if: ((github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) && (github.event_name != 'pull_request') && !(startsWith(github.ref, 'refs/tags/')))
+        run: |
+          SET_VERSION="${{steps.find_version.outputs.NEW_VERSION}}+${{ github.ref_name }}"
+          sed -i "s~version = \"dev\"~version = \"$SET_VERSION\"~g" pack.toml
+          echo "SET_VERSION=${SET_VERSION}" >> $GITHUB_ENV
+
+      - run: |
+          echo "# Version" >> $GITHUB_STEP_SUMMARY
+          echo "${{env.SET_VERSION}}" >> $GITHUB_STEP_SUMMARY
+
+      - name: generate hashes
         run: packwiz refresh --build
 
       - name: upload artifact (packwiz)
         uses: actions/upload-artifact@v3
         with:
-          name: "modpack (packwiz format)"
-          path: | 
+          name: "packwiz-modpack"
+          path: |
             pack.toml
             index.toml
             mods/
+            README.md
 
       - name: Cache Mods
         id: cache-mods
@@ -43,6 +100,72 @@ jobs:
       - name: upload artifact (modrinth)
         uses: actions/upload-artifact@v3
         with:
-          name: "modpack (modrinth format)"
+          name: "modrinth-modpack"
           path: "hackclub-modded.mrpack"
+  release:
+    needs: build-artifacts
+    if: ${{ github.ref_type == 'tag' }}
+    name: Release to modrinth and github
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Fetch Modrinth Modpack
+        uses: actions/download-artifact@v3
+        with:
+          name: modrinth-modpack
+      - name: Fetch Packwiz Modpack
+        uses: actions/download-artifact@v3
+        with:
+          name: packwiz-modpack
+          path: pw-modpack
+      - name: Create hackclubmodpack.zip
+        run: zip -rq hackclub-modded-packwiz pw-modpack/  # hackclub-modded-packwiz.zip
 
+      - name: Create Modrinth Release
+        id: modrinth-release
+        if: false
+        uses: Kir-Antipov/mc-publish@v3.2
+        with:
+          modrinth-id: ${{ secrets.MODRINTH_PROJECT }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-featured: ${{ !(contains(github.ref, '-rc.')) }}
+          modrinth-unfeature-mode: ${{ ((contains(github.ref, '-rc.')) && 'none') || 'any' }} # "any" if production deploy, none otherwise
+          files-primary: "hackclub-modded.mrpack"
+          files-extra: "hackclub-modded-packwiz.zip"
+          version-type: ${{ ((contains(github.ref, '-rc.')) && 'beta') || 'release' }}
+          game-versions: 1.18.2
+
+      - name: Create Github Release
+        id: github-release
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: ${{ !(contains(github.ref, '-rc.')) }}
+          prerelease: ${{ contains(github.ref, '-rc.') }}
+          files: |
+            hackclub-modded.mrpack
+            hackclub-modded-packwiz.zip
+      - if: ((steps.github-release.conclusion == 'success') || (steps.modrinth-release.conclusion == 'success'))
+        run: echo "# Releases" >> $GITHUB_STEP_SUMMARY
+
+      - if: steps.github-release.conclusion == 'success'
+        run: |
+          echo "- [Github](${{ steps.github-release.outputs.url }})" >> $GITHUB_STEP_SUMMARY
+
+      - if: steps.modrinth-release.conclusion == 'success'
+        run: |
+          echo "- [Modrinth](https://modrinth.com/modpacks/${{secrets.MODRINTH_PROJECT}}/versions)" >> $GITHUB_STEP_SUMMARY
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: build-artifacts
+    if: false # tmp
+    steps:
+      - name: Fetch Packwiz Modpack
+        uses: actions/download-artifact@v3
+        with:
+          name: packwiz-modpack
+          path: pw-modpack
+
+      - name: Deploy production
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: pw-modpack
+          target-folder: v3
