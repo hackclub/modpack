@@ -3,6 +3,6 @@
 
 This modpack uses [packwiz](https://packwiz.infra.link/) to manage mods.
 
-**This modpack is WIP, the download link will be available soon**
+**Head onto [releases](https://github.com/hackclub/modpack/releases/latest) to download and start playing today!**
 
 Tested with [Prism Launcher](https://prismlauncher.org/), but other launchers supporting modrinth format modpacks should work.
