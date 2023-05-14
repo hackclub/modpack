@@ -1,0 +1,13 @@
+name = "Structure Gel API"
+filename = "structure_gel-1.18.2-2.4.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "444fd1ed8ed51e9cbdd8554a167be6bbd8eb91bd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4018606
+project-id = 378802
