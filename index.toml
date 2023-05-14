@@ -205,6 +205,10 @@ file = "mods/gravestone-mod.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/immersiveengineering.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/industrial-foregoing.pw.toml"
 metafile = true
 
@@ -306,6 +310,10 @@ metafile = true
 
 [[files]]
 file = "mods/quark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures-forge.pw.toml"
 metafile = true
 
 [[files]]
