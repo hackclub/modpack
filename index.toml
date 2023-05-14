@@ -313,6 +313,10 @@ file = "mods/quark.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/quickteleports.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/repurposed-structures-forge.pw.toml"
 metafile = true
 
