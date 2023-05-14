@@ -411,11 +411,6 @@ hash = "03adb29e1cbcbdce8851c9a7728cfe37aab8b3c7d3badfc6bce56df74f71383e"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-resources.pw.toml"
-hash = "7d48064ce69f8dc691cc8230e25fc267fb88fa89c7d68eff1fd21c24f2068995"
-metafile = true
-
-[[files]]
 file = "mods/runelic.pw.toml"
 hash = "f9421682d84321e3d88e00733aa976502ea3d3a8bdfb8a1b9c050604fa8e9694"
 metafile = true
