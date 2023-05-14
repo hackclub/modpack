@@ -13,6 +13,10 @@ file = "mods/ae2.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/akashic-tome.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 metafile = true
 
@@ -281,6 +285,14 @@ file = "mods/modular-routers.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/morph-o-tool.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 metafile = true
 
@@ -314,6 +326,10 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-resources.pw.toml"
 metafile = true
 
 [[files]]
