@@ -16,6 +16,11 @@ hash = "6f1416e94a30e075210ebc3dfbb24ea4a62d8a1b529b1ae39a9f3de75db4b62a"
 metafile = true
 
 [[files]]
+file = "mods/akashic-tome.pw.toml"
+hash = "a1da6eba0b36c247e005f446439ecf0647b492fc8e81a37423c37bf1345707ef"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "535d312128e500ea510af84dbf65008ae48f4d9640be713088c3d00a99ef1f7d"
 metafile = true
@@ -221,6 +226,11 @@ hash = "223a1dedd2d506e656945a9ff1b62ea56306b813a8df823a0d936b16a2812496"
 metafile = true
 
 [[files]]
+file = "mods/feature-nbt-deadlock-be-gone.pw.toml"
+hash = "102d8d9d03ab3f95c73dd82bf9ef3df37dba791f92e3cbd2ca7e54d4af603417"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "e8fba4f1d9fa4d7ffd369b6b4583b858db24411df006899c2592576708a03480"
 metafile = true
@@ -253,6 +263,11 @@ metafile = true
 [[files]]
 file = "mods/gravestone-mod.pw.toml"
 hash = "7638c6fcf4af1039a9c99717ce8fb029ba7e7bec473994565e743d26da44a516"
+metafile = true
+
+[[files]]
+file = "mods/immersiveengineering.pw.toml"
+hash = "d9a57d545fa589a3f82737a8f971703c04434774e08e2c393aa7411ce0c23a6a"
 metafile = true
 
 [[files]]
@@ -351,6 +366,16 @@ hash = "345939a40a69469bfb53e1f6650959757f26583eede75de734b2ed5bdb64f69b"
 metafile = true
 
 [[files]]
+file = "mods/morph-o-tool.pw.toml"
+hash = "75c4fb367079d4a434b6a6ba0724cdb329caa5562a5b40893f1b351c80176bae"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "e3b607348fc4084c8aece8cccaa3c58af8d12e518c305bdbe044eabc2bb0b472"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "57ac6a0c9ff86970abd118151407ba3064d30fc46c5b00256e7169b63a0eda51"
 metafile = true
@@ -383,6 +408,16 @@ metafile = true
 [[files]]
 file = "mods/quark.pw.toml"
 hash = "4d6310ca9a4cf607116540cfb0282536728d90852388f0abca94c820f92a4482"
+metafile = true
+
+[[files]]
+file = "mods/quickteleports.pw.toml"
+hash = "d370a5dd771535b954866e947bd32960a9bdce143d2c9926c1a21fd9fe60658a"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures-forge.pw.toml"
+hash = "25520eb264b7b3c9e13584a04c89b7dfef36fae2ef8d60981c04ef4d5d463b91"
 metafile = true
 
 [[files]]
