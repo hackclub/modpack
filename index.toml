@@ -329,10 +329,6 @@ file = "mods/roughly-enough-items.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-resources.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/runelic.pw.toml"
 metafile = true
 
