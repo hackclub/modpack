@@ -1,0 +1,13 @@
+name = "Smooth Boot (Reloaded)"
+filename = "smoothboot(reloaded)-mc1.18.2-0.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/z53V2L4P/versions/qmq8DyRI/smoothboot%28reloaded%29-mc1.18.2-0.0.2.jar"
+hash-format = "sha1"
+hash = "d24b9e855883161dca11e028f8fb003d24d0b80d"
+
+[update]
+[update.modrinth]
+mod-id = "z53V2L4P"
+version = "qmq8DyRI"
