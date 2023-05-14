@@ -3,11 +3,11 @@ filename = "trashcans-1.0.17a-forge-mc1.18.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/4QrnfueM/versions/OcibVS6J/trashcans-1.0.17a-forge-mc1.18.jar"
 hash-format = "sha1"
 hash = "dec88d4d46d69a079a554edacbbce86cd28b7a04"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 4418810
-project-id = 394535
+[update.modrinth]
+mod-id = "4QrnfueM"
+version = "OcibVS6J"

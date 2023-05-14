@@ -1,7 +1,7 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mods/advanced-peripherals.pw.toml"
+file = "mods/advancedperipherals.pw.toml"
 metafile = true
 
 [[files]]
@@ -14,10 +14,6 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/applied-energistics-2.pw.toml"
 metafile = true
 
 [[files]]
@@ -169,7 +165,7 @@ file = "mods/experience-obelisk.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/extreme-sound-muffler.pw.toml"
+file = "mods/extreme_sound_muffler.pw.toml"
 metafile = true
 
 [[files]]
@@ -229,7 +225,7 @@ file = "mods/iron-chests.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/jade-addons.pw.toml"
+file = "mods/jade-addons-forge.pw.toml"
 metafile = true
 
 [[files]]
@@ -309,11 +305,11 @@ file = "mods/quark.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-items-hacks.pw.toml"
+file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-items.pw.toml"
+file = "mods/roughly-enough-items-hacks.pw.toml"
 metafile = true
 
 [[files]]

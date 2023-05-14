@@ -3,11 +3,11 @@ filename = "thermal_integration-1.18.2-9.2.0.16.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/Ro7yiyD4/versions/ql1RhGvN/thermal_integration-1.18.2-9.2.0.16.jar"
 hash-format = "sha1"
 hash = "5be760c42996a39295ae728e4b66000aff1a8acc"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 4382885
-project-id = 626708
+[update.modrinth]
+mod-id = "Ro7yiyD4"
+version = "ql1RhGvN"
