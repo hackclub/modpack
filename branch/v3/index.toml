@@ -16,6 +16,11 @@ hash = "6f1416e94a30e075210ebc3dfbb24ea4a62d8a1b529b1ae39a9f3de75db4b62a"
 metafile = true
 
 [[files]]
+file = "mods/akashic-tome.pw.toml"
+hash = "a1da6eba0b36c247e005f446439ecf0647b492fc8e81a37423c37bf1345707ef"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "535d312128e500ea510af84dbf65008ae48f4d9640be713088c3d00a99ef1f7d"
 metafile = true
@@ -353,6 +358,16 @@ metafile = true
 [[files]]
 file = "mods/modular-routers.pw.toml"
 hash = "345939a40a69469bfb53e1f6650959757f26583eede75de734b2ed5bdb64f69b"
+metafile = true
+
+[[files]]
+file = "mods/morph-o-tool.pw.toml"
+hash = "75c4fb367079d4a434b6a6ba0724cdb329caa5562a5b40893f1b351c80176bae"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "e3b607348fc4084c8aece8cccaa3c58af8d12e518c305bdbe044eabc2bb0b472"
 metafile = true
 
 [[files]]
