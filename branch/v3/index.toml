@@ -256,6 +256,11 @@ hash = "7638c6fcf4af1039a9c99717ce8fb029ba7e7bec473994565e743d26da44a516"
 metafile = true
 
 [[files]]
+file = "mods/immersiveengineering.pw.toml"
+hash = "d9a57d545fa589a3f82737a8f971703c04434774e08e2c393aa7411ce0c23a6a"
+metafile = true
+
+[[files]]
 file = "mods/industrial-foregoing.pw.toml"
 hash = "cf703ea691d4c4781eeffa3d31a8038348ebfb7d9134725c23753c7fe1a71aa5"
 metafile = true
@@ -383,6 +388,16 @@ metafile = true
 [[files]]
 file = "mods/quark.pw.toml"
 hash = "4d6310ca9a4cf607116540cfb0282536728d90852388f0abca94c820f92a4482"
+metafile = true
+
+[[files]]
+file = "mods/quickteleports.pw.toml"
+hash = "d370a5dd771535b954866e947bd32960a9bdce143d2c9926c1a21fd9fe60658a"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures-forge.pw.toml"
+hash = "25520eb264b7b3c9e13584a04c89b7dfef36fae2ef8d60981c04ef4d5d463b91"
 metafile = true
 
 [[files]]
