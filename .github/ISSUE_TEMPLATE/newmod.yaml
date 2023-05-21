@@ -1,0 +1,40 @@
+name: Suggest a new mod
+description: Request for a new mod to be added
+title: "[NEW MOD] INSERT_MOD_NAME"
+labels: ["new-mod"]
+assignees:
+  - alx-alexpark
+  - the456gamer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new mod.
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod Name
+      description: Name of the mod
+      placeholder: ex. Applied Energistics 2
+    validations:
+      required: true
+  - type: textarea
+    id: mod-link
+    attributes:
+      label: Mod Link
+      description: Link to the mod (Curseforge or Modrinth)
+      placeholder: ex. https://modrinth.com/mod/ae2
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      description: I confirm that I have checked that these are true
+      options:
+        - label: The mod is available for **Forge 1.18.2**
+          required: true
+        - label: The mod is open source
+          required: true
+        - label: There are no incompatabilities or conflicts with currently installed mods
+          required: true
