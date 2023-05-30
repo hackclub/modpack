@@ -69,6 +69,10 @@ file = "mods/building-gadgets.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/canary.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 metafile = true
 
@@ -165,6 +169,10 @@ file = "mods/entityculling.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/eureka-ships.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/expandability.pw.toml"
 metafile = true
 
@@ -257,6 +265,10 @@ file = "mods/journeymap.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/lazierae2.pw.toml"
 metafile = true
 
@@ -337,6 +349,26 @@ file = "mods/repurposed-structures-forge.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/rftools-base.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-builder.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-dimensions.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-utility.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/roughly-enough-items-hacks.pw.toml"
 metafile = true
 
@@ -413,5 +445,13 @@ file = "mods/trash-cans.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/valkyrien-skies.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xnet.pw.toml"
 metafile = true
