@@ -1,0 +1,13 @@
+name = "Applied Cooking"
+filename = "appliedcooking-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "829860ed23dd120c407c08a22e754a3deb064b72"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4110309
+project-id = 689579
