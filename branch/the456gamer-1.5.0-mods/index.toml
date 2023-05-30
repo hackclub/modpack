@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ferritecore-mixin.toml"
+hash = "2bc1763322e2ec8c558adbc1f36017329197a5f31e8276ad51a96d30a9a53115"
+
+[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 hash = "0186e7f4f8fd2796123df62c8e6ac869b189df6beb7a601f9a5c825f0464292e"
 metafile = true
@@ -533,6 +537,11 @@ metafile = true
 [[files]]
 file = "mods/sebastrnlib.pw.toml"
 hash = "cd7a5339652c81f9e489b07036ca24a435c4c8ce87e91c3c2c47c36f7fc604dd"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+hash = "26e591b0b07c8ef07f887eaf3feee21d564c891418e3da0304b39972d6ffb106"
 metafile = true
 
 [[files]]
