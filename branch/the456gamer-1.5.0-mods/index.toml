@@ -6,6 +6,10 @@ hash = "2bc1763322e2ec8c558adbc1f36017329197a5f31e8276ad51a96d30a9a53115"
 preserve = true
 
 [[files]]
+file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
+hash = "337041abb3dd0baa28dcf83a43cbfd7f013dad19210901f887f5f9806dd1d809"
+
+[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 hash = "0186e7f4f8fd2796123df62c8e6ac869b189df6beb7a601f9a5c825f0464292e"
 metafile = true
@@ -263,11 +267,6 @@ metafile = true
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
 hash = "36b91702724cbe50f4fdcb0f278af876b67a0aeceeb557d3ae0e3a0b63499d6f"
-metafile = true
-
-[[files]]
-file = "mods/farmers-delight.pw.toml"
-hash = "223a1dedd2d506e656945a9ff1b62ea56306b813a8df823a0d936b16a2812496"
 metafile = true
 
 [[files]]
