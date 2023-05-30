@@ -436,6 +436,10 @@ file = "mods/selene.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/simple-backups.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/simply-backpacks.pw.toml"
 metafile = true
 
