@@ -1,0 +1,13 @@
+name = "RFTools Utility"
+filename = "rftoolsutility-1.18-4.0.23.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7n3HbHSE/versions/YCcjnq9i/rftoolsutility-1.18-4.0.23.jar"
+hash-format = "sha1"
+hash = "abfbc60b0092c60b1eb79153fa8e7440fdf08644"
+
+[update]
+[update.modrinth]
+mod-id = "7n3HbHSE"
+version = "YCcjnq9i"
