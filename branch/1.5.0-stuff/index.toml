@@ -86,6 +86,11 @@ hash = "29f7a1cfbc20432885d12c36245b503103857c068b27865d804cbd06d9b386f9"
 metafile = true
 
 [[files]]
+file = "mods/canary.pw.toml"
+hash = "795ad7bed9f1924b62c9b76f791c111646bb78b57e02b23c146d1cc5e23d79bf"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "ce2aa209b10a5ca89af90a5cb67292117dee46165dab91538d543782c49dace3"
 metafile = true
@@ -206,6 +211,11 @@ hash = "9c896dd2db4542134682178d25ca3644e8c945408a6486fc9d7cb03f6277a829"
 metafile = true
 
 [[files]]
+file = "mods/eureka-ships.pw.toml"
+hash = "c8be924178c9238e4f8957708fb9d78adff433267d8e5f6a3cad5cfadf191899"
+metafile = true
+
+[[files]]
 file = "mods/expandability.pw.toml"
 hash = "2ecdf3ae76d4ad10da711a93c966f6306c1bfdec39fe9f6c356000e600bf5844"
 metafile = true
@@ -321,6 +331,11 @@ hash = "5209de0e2eeccacc8f2d554681f92deb78b4c108e596c60e580d5e2a1b3f2756"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "8fd61b13a6da4b7f5cdf69ab6241c296b3019846a1635a2cbb427fbbb21635b2"
+metafile = true
+
+[[files]]
 file = "mods/lazierae2.pw.toml"
 hash = "15ab30e8e115cad509dd22858572bb588340bfa8cd4f4c2660771e33c7e9bbca"
 metafile = true
@@ -332,7 +347,7 @@ metafile = true
 
 [[files]]
 file = "mods/mcjtylib.pw.toml"
-hash = "0c4037041d6e546c141984f8294166af45c729f5ff536d811a23d65973d807c0"
+hash = "d90b48ea447681cc04482810a0a77c1f2f4b21831abd2bebac81a0628c908e0c"
 metafile = true
 
 [[files]]
@@ -418,6 +433,31 @@ metafile = true
 [[files]]
 file = "mods/repurposed-structures-forge.pw.toml"
 hash = "25520eb264b7b3c9e13584a04c89b7dfef36fae2ef8d60981c04ef4d5d463b91"
+metafile = true
+
+[[files]]
+file = "mods/rftools-base.pw.toml"
+hash = "6d39e20b8e9184c1952fa66793c28cb81d2bd6829960d4c82ea0a11dab2b964f"
+metafile = true
+
+[[files]]
+file = "mods/rftools-builder.pw.toml"
+hash = "0d166874570482dc2c7300d4b4c46a8b060550a9e7438151ee74e10cc13208f4"
+metafile = true
+
+[[files]]
+file = "mods/rftools-dimensions.pw.toml"
+hash = "64be0f24fc295cb39419eebffdf8b9da9905d3467b4415c16727df5a32fa27a2"
+metafile = true
+
+[[files]]
+file = "mods/rftools-storage.pw.toml"
+hash = "849082fb953eaf9b07bd458035758939b0760281ee0cd53b6349dd716dcd1b42"
+metafile = true
+
+[[files]]
+file = "mods/rftools-utility.pw.toml"
+hash = "f4179b4e23848454af089eb7ff86a77cc386b6a4e9a3b00550e123efa1f05bdc"
 metafile = true
 
 [[files]]
@@ -516,6 +556,16 @@ hash = "b05f6b58ef441c7d352d0cef840813c33441f80c70bd04c5c4409fc4f9499726"
 metafile = true
 
 [[files]]
+file = "mods/valkyrien-skies.pw.toml"
+hash = "f12c2617cac977d43c28767d3f59543d5121754307cd509525fef38703dc96ec"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "7566e584dc2ba7115ce13ee79f5f15f32798f9559d3c01decace774634893159"
+metafile = true
+
+[[files]]
+file = "mods/xnet.pw.toml"
+hash = "8c48433e6362f6a37a0227bced0fb75ba60c507cd3760b5ba7b1f83d1f1b306f"
 metafile = true
