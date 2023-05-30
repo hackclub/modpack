@@ -5,6 +5,9 @@ file = "config/ferritecore-mixin.toml"
 preserve = true
 
 [[files]]
+file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
+
+[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 metafile = true
 
@@ -210,10 +213,6 @@ metafile = true
 
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/farmers-delight.pw.toml"
 metafile = true
 
 [[files]]
