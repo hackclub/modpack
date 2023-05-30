@@ -1,0 +1,13 @@
+name = "Just Enough Effect Descriptions (JEED)"
+filename = "jeed-1.18.2-1.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EO27GKs1/versions/2y31STXm/jeed-1.18.2-1.11.jar"
+hash-format = "sha1"
+hash = "4ec2e30c7626295d0d92c7448f41ff7e3b8c0a0b"
+
+[update]
+[update.modrinth]
+mod-id = "EO27GKs1"
+version = "2y31STXm"

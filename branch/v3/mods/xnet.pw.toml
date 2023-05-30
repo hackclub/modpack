@@ -1,0 +1,13 @@
+name = "XNet"
+filename = "xnet-1.18-4.0.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iu1jkWqa/versions/bApMfE9G/xnet-1.18-4.0.9.jar"
+hash-format = "sha1"
+hash = "47297b9fafb292c0b343a57631d28b6333410356"
+
+[update]
+[update.modrinth]
+mod-id = "iu1jkWqa"
+version = "bApMfE9G"
