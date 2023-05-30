@@ -17,10 +17,6 @@ file = "mods/ae2.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/aeinfinitybooster.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/akashic-tome.pw.toml"
 metafile = true
 
