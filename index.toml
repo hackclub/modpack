@@ -1,6 +1,13 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ferritecore-mixin.toml"
+preserve = true
+
+[[files]]
+file = "config/sebastrnlib-client.toml"
+
+[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 metafile = true
 
@@ -21,6 +28,14 @@ file = "mods/appleskin.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/applied-cooking.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/applied-energistics-2-wireless-terminals.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/applied-energistics-2.pw.toml"
 metafile = true
 
@@ -38,6 +53,10 @@ metafile = true
 
 [[files]]
 file = "mods/artifacts.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/attributefix.pw.toml"
 metafile = true
 
 [[files]]
@@ -69,6 +88,10 @@ file = "mods/building-gadgets.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/canary.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 metafile = true
 
@@ -85,6 +108,10 @@ file = "mods/cloth-config.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/clumps.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/codechicken-lib-1-8.pw.toml"
 metafile = true
 
@@ -98,6 +125,10 @@ metafile = true
 
 [[files]]
 file = "mods/controlling.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cooking-for-blockheads.pw.toml"
 metafile = true
 
 [[files]]
@@ -165,6 +196,14 @@ file = "mods/entityculling.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/eureka-ships.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/every-compat.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/expandability.pw.toml"
 metafile = true
 
@@ -177,7 +216,7 @@ file = "mods/extreme-sound-muffler.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/farmers-delight.pw.toml"
+file = "mods/farmersdelight.pw.toml"
 metafile = true
 
 [[files]]
@@ -249,6 +288,10 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/jea.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/journeymap-integration.pw.toml"
 metafile = true
 
@@ -257,7 +300,19 @@ file = "mods/journeymap.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/lazierae2.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/libx.pw.toml"
 metafile = true
 
 [[files]]
@@ -337,6 +392,26 @@ file = "mods/repurposed-structures-forge.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/rftools-base.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-builder.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-dimensions.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rftools-utility.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/roughly-enough-items-hacks.pw.toml"
 metafile = true
 
@@ -345,7 +420,23 @@ file = "mods/roughly-enough-items.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/roughly-enough-resources.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/runelic.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sebastrnlib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/simple-backups.pw.toml"
 metafile = true
 
 [[files]]
@@ -374,6 +465,10 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/tax-free-levels.pw.toml"
 metafile = true
 
 [[files]]
@@ -413,5 +508,13 @@ file = "mods/trash-cans.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/valkyrien-skies.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xnet.pw.toml"
 metafile = true
