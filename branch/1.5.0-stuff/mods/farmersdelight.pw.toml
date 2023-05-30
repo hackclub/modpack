@@ -1,0 +1,7 @@
+name = "farmersdelight"
+filename = "FarmersDelight-1.18.2-1.2.1.jar"
+
+[download]
+url = "https://github.com/the456gamer/FarmersDelight/releases/download/release/FarmersDelight-1.18.2-1.2.1.jar"
+hash-format = "sha1"
+hash = "69ff14557c4dc11e4f9a3f15c765d7e48f05cc3d"
