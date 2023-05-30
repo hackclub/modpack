@@ -3,6 +3,7 @@ hash-format = "sha256"
 [[files]]
 file = "config/ferritecore-mixin.toml"
 hash = "2bc1763322e2ec8c558adbc1f36017329197a5f31e8276ad51a96d30a9a53115"
+preserve = true
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
@@ -476,7 +477,7 @@ metafile = true
 
 [[files]]
 file = "mods/quark.pw.toml"
-hash = "4d6310ca9a4cf607116540cfb0282536728d90852388f0abca94c820f92a4482"
+hash = "323bf0949b42dbb97a7c35d17f436a7b2c7eb463cc97f46a54469ff3a0bad027"
 metafile = true
 
 [[files]]
