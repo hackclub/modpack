@@ -245,11 +245,6 @@ hash = "9c896dd2db4542134682178d25ca3644e8c945408a6486fc9d7cb03f6277a829"
 metafile = true
 
 [[files]]
-file = "mods/eureka-ships.pw.toml"
-hash = "c8be924178c9238e4f8957708fb9d78adff433267d8e5f6a3cad5cfadf191899"
-metafile = true
-
-[[files]]
 file = "mods/every-compat.pw.toml"
 hash = "238aa728d12edcd1bda20e45b40d305e1a667c33e2f3a212f8313cd90314fda1"
 metafile = true
@@ -632,11 +627,6 @@ metafile = true
 [[files]]
 file = "mods/trash-cans.pw.toml"
 hash = "b05f6b58ef441c7d352d0cef840813c33441f80c70bd04c5c4409fc4f9499726"
-metafile = true
-
-[[files]]
-file = "mods/valkyrien-skies.pw.toml"
-hash = "f12c2617cac977d43c28767d3f59543d5121754307cd509525fef38703dc96ec"
 metafile = true
 
 [[files]]
