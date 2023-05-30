@@ -196,10 +196,6 @@ file = "mods/entityculling.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/eureka-ships.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/every-compat.pw.toml"
 metafile = true
 
@@ -505,10 +501,6 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/valkyrien-skies.pw.toml"
 metafile = true
 
 [[files]]
