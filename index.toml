@@ -8,9 +8,6 @@ preserve = true
 file = "config/sebastrnlib-client.toml"
 
 [[files]]
-file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
-
-[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 metafile = true
 
@@ -216,6 +213,10 @@ metafile = true
 
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/farmersdelight.pw.toml"
 metafile = true
 
 [[files]]
