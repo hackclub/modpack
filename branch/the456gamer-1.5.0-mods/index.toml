@@ -6,6 +6,10 @@ hash = "2bc1763322e2ec8c558adbc1f36017329197a5f31e8276ad51a96d30a9a53115"
 preserve = true
 
 [[files]]
+file = "config/sebastrnlib-client.toml"
+hash = "6045f2b807be45907649e1e063a7056ca8169673d87de542052921f1f69b6e8f"
+
+[[files]]
 file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
 hash = "337041abb3dd0baa28dcf83a43cbfd7f013dad19210901f887f5f9806dd1d809"
 
