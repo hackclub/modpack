@@ -5,6 +5,9 @@ file = "config/ferritecore-mixin.toml"
 preserve = true
 
 [[files]]
+file = "config/sebastrnlib-client.toml"
+
+[[files]]
 file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
 
 [[files]]
