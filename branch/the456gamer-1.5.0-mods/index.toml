@@ -376,11 +376,6 @@ hash = "9dfb07c16957c6f026c40ddee7e7fca7ca997c94e069f2bdfd17b294232adbee"
 metafile = true
 
 [[files]]
-file = "mods/just-enough-resources-jer.pw.toml"
-hash = "2f86406baf5c931fbb9b37c0ed93c8d041fe32eb6c9b20b915a351e0a1bfb0fc"
-metafile = true
-
-[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "8fd61b13a6da4b7f5cdf69ab6241c296b3019846a1635a2cbb427fbbb21635b2"
 metafile = true
@@ -523,6 +518,11 @@ metafile = true
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
 hash = "924cb25e6e63174df018481d6c2944ec6494d4982c8331dffde0bca615647983"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-resources.pw.toml"
+hash = "7d48064ce69f8dc691cc8230e25fc267fb88fa89c7d68eff1fd21c24f2068995"
 metafile = true
 
 [[files]]
