@@ -1,6 +1,9 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ferritecore-mixin.toml"
+
+[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 metafile = true
 
@@ -426,6 +429,10 @@ metafile = true
 
 [[files]]
 file = "mods/sebastrnlib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
 metafile = true
 
 [[files]]
