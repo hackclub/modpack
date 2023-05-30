@@ -1,12 +1,12 @@
 name = "Hack Pack"
 author = "Hack Club Minecraft Admins"
-version = "v1.4.0-11-g1306d1f+the456gamer-1.5.0-mods"
+version = "v1.4.0-12-g5e59bf5+the456gamer-1.5.0-mods"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d4d0eca2a81e6905dc1f4a5a50985f5929cfc98fe013e08b19b3186b9d3b8bb8"
+hash = "2f23ccbcef38513c07d18e6c89310d76f6ad6958c475bef97929896f91c6569c"
 
 [versions]
 forge = "40.2.7"
