@@ -1,0 +1,13 @@
+name = "RFTools Dimensions"
+filename = "rftoolsdim-1.18-8.0.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/N4D9AicU/versions/okS0wEo4/rftoolsdim-1.18-8.0.10.jar"
+hash-format = "sha1"
+hash = "551a8627c5aec1084cb3f4076e9073391705affe"
+
+[update]
+[update.modrinth]
+mod-id = "N4D9AicU"
+version = "okS0wEo4"
