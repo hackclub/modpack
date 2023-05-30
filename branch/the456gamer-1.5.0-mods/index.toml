@@ -10,10 +10,6 @@ file = "config/sebastrnlib-client.toml"
 hash = "6045f2b807be45907649e1e063a7056ca8169673d87de542052921f1f69b6e8f"
 
 [[files]]
-file = "mods/FarmersDelight-1.18.2-1.2.1.jar"
-hash = "337041abb3dd0baa28dcf83a43cbfd7f013dad19210901f887f5f9806dd1d809"
-
-[[files]]
 file = "mods/advanced-peripherals.pw.toml"
 hash = "0186e7f4f8fd2796123df62c8e6ac869b189df6beb7a601f9a5c825f0464292e"
 metafile = true
@@ -271,6 +267,11 @@ metafile = true
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
 hash = "36b91702724cbe50f4fdcb0f278af876b67a0aeceeb557d3ae0e3a0b63499d6f"
+metafile = true
+
+[[files]]
+file = "mods/farmersdelight.pw.toml"
+hash = "9eda738181dd6abbf16bb3a567718c717a7e59a3988b4e8cfcd34fc01e24e107"
 metafile = true
 
 [[files]]
