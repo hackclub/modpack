@@ -1,0 +1,13 @@
+name = "Chance Cubes"
+filename = "ChanceCubes-1.18.2-5.0.2.483.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "50c4db307cffc19395147ea7c82ffeb9bcaa9ddb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4451640
+project-id = 233113
