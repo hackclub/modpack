@@ -1,0 +1,13 @@
+name = "LibX"
+filename = "LibX-1.18.2-3.2.19.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qEH6GYul/versions/1.18.2-3.2.19/LibX-1.18.2-3.2.19.jar"
+hash-format = "sha1"
+hash = "18584a3cdbd95caf5c4b1fc1389647f193f15f74"
+
+[update]
+[update.modrinth]
+mod-id = "qEH6GYul"
+version = "Rw7rEJk3"
