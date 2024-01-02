@@ -32,7 +32,7 @@ body:
       label: Confirmation
       description: I confirm that I have checked that these are true
       options:
-        - label: The mod is available for **Forge 1.18.2**
+        - label: The mod is available for **Forge 1.19.4**
           required: true
         - label: The mod is open source
           required: true
