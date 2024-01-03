@@ -8,7 +8,7 @@ file = "index.toml"
 hash-format = "sha256"
 
 [versions]
-forge = "45.0.0"
+forge = "45.2.8"
 minecraft = "1.19.4"
 
 [options]
