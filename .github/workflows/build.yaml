@@ -151,7 +151,7 @@ jobs:
           files-primary: "${{ env.target-name }}.mrpack"
           files-extra: "${{ env.target-name }}.packwiz.zip"
           version-type: ${{ ((contains(github.ref, '-rc.')) && 'beta') || 'release' }}
-          game-versions: 1.18.2
+          game-versions: 1.19.4
 
       - name: Create Github Release
         id: github-release
