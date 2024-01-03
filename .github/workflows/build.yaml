@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 env:
-  target-name: hackpack
+  target-name: hackpackv4
 
 jobs:
   build-artifacts:
