@@ -1,6 +1,6 @@
 name = "Hack Pack v4"
 author = "The Hack Club Community"
-version = "1.0.0"
+version = "dev"
 pack-format = "packwiz:1.1.0"
 
 [index]
